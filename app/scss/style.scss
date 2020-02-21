@@ -3,7 +3,9 @@
 @import 'fonts';
 
 // start header
-
+.header__top {
+    background-color: #ffffff;
+}
 .header__top-inner{
     display: flex;
     justify-content: space-between;
@@ -107,6 +109,7 @@
     }
 }
 .basket {
+    margin-right: 20px;
     span {
        background-color: $green; 
     }
@@ -121,7 +124,6 @@
     }
 }
 .user {
-    margin-left: 20px;
     margin-right: 25px;
     padding-right: 20px;
     position: relative;
@@ -204,6 +206,7 @@
     height: 0;
     overflow: hidden;
     transition: all 0.3s;
+    z-index: 1;
 }
 .basket__box,
 .notification__box,
@@ -313,6 +316,10 @@
     color: $tomato;
 }
 
+.header__btn-menu,
+.menu__btn {
+    display: none;
+}
 // end header
 // start search
 
@@ -1213,7 +1220,14 @@ button.icon-unsorted {
     }
 }
 //end product-page
-.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg { 
     stroke: orange;
     stroke-width: 25;
  }
+
+
+ //media
+
+ @import 'media';
+
+
